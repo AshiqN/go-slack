@@ -63,6 +63,8 @@ type Message struct {
 	// ReplyBroadcast used in conjunction with thread_ts and indicates whether reply
 	// should be made visible to everyone in the channel or conversation.
 	ReplyBroadcast bool `json:"reply_broadcast,omitempty"`
+	
+	Ashiq string `json:"ashiq_ts,omitempty"`
 }
 
 // NewAttachment creates a new empty attachment adds it to the message and returns it.
